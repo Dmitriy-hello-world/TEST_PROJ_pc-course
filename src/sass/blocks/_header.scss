@@ -1,0 +1,50 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+
+    &__list {
+        list-style-type: none;
+        display: flex;
+        margin: 0;
+    }
+
+    &__list-item {
+        margin-right: 56px;
+
+        &:nth-child(6) {
+            margin-right: 0;
+        }
+
+        a {
+            display: block;
+            position: relative;
+            font-size: 16px;
+            line-height: 150%;
+            color: #FFFFFF;
+
+            &:hover {
+                text-decoration: none;
+                color: $main-color;
+
+                &::before {
+                    width: 100%;
+                }
+            }
+
+            &:before {
+                position: absolute;
+                content: '';
+                display: block;
+                height: 2px;
+                width: 0%;
+                bottom: 0;
+                left: 0;
+                background: $main-color;
+                transition: all 0.3s;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,42 @@
+.working {
+    background: url('../img/bgc.jpg') repeat;
+    min-height: 950px;
+    padding: 200px 0 200px 0;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__squere {
+        width: 526px;
+        height: 499px;
+        border: 30px solid white;
+        border-image: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+        border-image-slice: 1;
+        position: relative;
+
+        img {
+            position: absolute;
+            top: 46px;
+            left: 10px;
+        }
+    }
+
+    &__content {
+        padding-top: 60px;
+        width: 550px;
+    }
+
+    &__header {
+        margin: 0;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 140%;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 160%;
+    }
+}
