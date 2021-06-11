@@ -1,0 +1,68 @@
+.partners {
+    background: url('../img/bgc.jpg') repeat;
+    padding-bottom: 200px;
+
+    &__subheader {
+        margin-top: 50px;
+        font-size: 16px;
+        line-height: 160%;
+        opacity: 0.5;
+        max-width: 400px;
+        padding-left: 35px;
+    }
+
+    &__wrapper {
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: minmax(270px, auto);
+        grid-auto-rows: minmax(270px, auto);
+    }
+
+    &__column {
+        display: grid;
+        grid-template-columns: 285px;
+        grid-template-rows: 50px 80px minmax(80px, auto);
+        grid-auto-rows: auto;
+        row-gap: 20px;
+    }
+
+    &__percent {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 140%;
+    }
+
+    &__score {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        &_bg {
+            @include main-gradient;
+            width: 100%;
+
+            &100 {
+                height: 100%;
+            }
+
+            &75 {
+                height: 75%;
+            }
+
+            &50 {
+                height: 50%;
+            }
+
+            &10 {
+                height: 10%;
+            }
+        }
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 160%;
+        opacity: 0.5;
+    }
+}
