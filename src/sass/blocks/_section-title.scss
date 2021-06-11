@@ -10,8 +10,12 @@
         transform: rotate(180deg);
     }
 
-    &_45deg {
+    &_m45deg {
         transform: rotate(-45deg);
+    }
+
+    &_135deg {
+        transform: rotate(135deg);
     }
 
     &__header {

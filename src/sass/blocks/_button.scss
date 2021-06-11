@@ -10,4 +10,18 @@
         text-decoration: none;
         color: #fff;
     }
+
+    &_nbg {
+        background: none;
+        border: 1px solid #FFFFFF;
+    }
+
+    &_nborder {
+        border: none;
+        background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+
+        &:hover {
+            background: linear-gradient(94.26deg, #451046 9%, #DF5950 90%);
+        }
+    }
 }
