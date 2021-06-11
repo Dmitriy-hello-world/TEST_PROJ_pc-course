@@ -1,0 +1,19 @@
+.burger {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+
+    span {
+        height: 5px;
+        width: 50px;
+        background: #fff;
+        margin-top: 5px;
+
+        &:nth-child(1) {
+            margin-top: 0;
+        }
+    }
+}
