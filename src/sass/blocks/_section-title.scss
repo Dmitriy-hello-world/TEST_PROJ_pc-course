@@ -10,13 +10,18 @@
         transform: rotate(180deg);
     }
 
-    &_90deg {
-        transform: rotate(90deg);
+    &_45deg {
+        transform: rotate(-45deg);
     }
 
     &__header {
         font-weight: 700;
         font-size: 48px;
         line-height: 140%;
+        margin: 0;
+    }
+
+    &_column {
+        flex-direction: column;
     }
 }

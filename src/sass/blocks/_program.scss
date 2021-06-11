@@ -1,0 +1,87 @@
+.program {
+    background: url('../img/bgc.jpg') repeat;
+    padding-bottom: 170px;
+
+    &__subheader {
+        margin: 30px auto 0 auto;
+        max-width: 410px;
+        font-size: 16px;
+        line-height: 160%;
+        text-align: center;
+        opacity: 0.5;
+    }
+
+    &__wrapper {
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: 6px;
+        height: 100%;
+        @include main-gradient;
+    }
+
+    &__item {
+        width: 230px;
+        position: relative;
+
+        &_left {
+            transform: translateX(calc(-100% - 66px));
+
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: -66px;
+                width: 40px;
+                height: 1px;
+                background: rgba(256, 256, 256, .4);
+            }
+        }
+
+        &_right {
+            transform: translateX(66px);
+
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -60px;
+                width: 40px;
+                height: 1px;
+                background: rgba(256, 256, 256, .4);
+            }
+        }
+    }
+
+    &__week {
+        font-size: 14px;
+        line-height: 160%;
+        text-align: right;
+        opacity: 0.5;
+
+        &_left {
+            text-align: left;
+        }
+    }
+
+    &__name {
+        margin-top: 15px;
+        font-size: 18px;
+        line-height: 160%;
+        text-align: right;
+
+        &_left {
+            text-align: left;
+        }
+    }
+}
