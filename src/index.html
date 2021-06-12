@@ -32,7 +32,7 @@
 
 <body>
 
-    <section class="promo">
+    <section class="promo" id="up">
         <div class="container">
 
             <header class="header">
@@ -49,8 +49,8 @@
                         <li class="header__list-item"><a href="#">Контакты</a></li>
                     </ul>
                 </nav>
-                <a href="#" class="button header__btn">
-                    Зайти в кабинет
+                <a href="#" class="button header__btn" data-trigger>
+                    Консультация
                 </a>
                 <div class="burger">
                     <span></span>
@@ -66,19 +66,19 @@
 
             <div class="timer promo__timer">
                 <div class="timer__box">
-                    <div class="timer__int">18</div>
+                    <div id="days" class="timer__int">18</div>
                     <div class="timer__name">Дней</div>
                 </div>
                 <div class="timer__box">
-                    <div class="timer__int">18</div>
+                    <div id="hours" class="timer__int">18</div>
                     <div class="timer__name">Часов</div>
                 </div>
                 <div class="timer__box">
-                    <div class="timer__int">18</div>
+                    <div id="minutes" class="timer__int">18</div>
                     <div class="timer__name">Минут</div>
                 </div>
                 <div class="timer__box">
-                    <div class="timer__int">18</div>
+                    <div id="seconds" class="timer__int">18</div>
                     <div class="timer__name">Секунд</div>
                 </div>
             </div>
@@ -86,7 +86,7 @@
         <div class="promo__order">
             <div class="container promo__container">
                 <div class="order">
-                    <a href="#" class="button order__btn">Заказать курс</a>
+                    <a href="#" class="button order__btn" data-trigger>Заказать курс</a>
                     <div class="order__stat">
                         <div class="order__total">Учеников всего:</div>
                         <div class="order__total-num">200</div>
@@ -160,42 +160,44 @@
                 Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер
             </div>
 
-            <div class="partners__wrapper">
-                <div class="partners__column">
-                    <div class="partners__percent">100%</div>
-                    <div class="partners__score">
-                        <div class="partners__score_bg partners__score_bg100"></div>
+            <div class="partners__inner">
+                <div class="partners__wrapper">
+                    <div class="partners__column">
+                        <div class="partners__percent">100%</div>
+                        <div class="partners__score">
+                            <div class="partners__score_bg partners__score_bg100"></div>
+                        </div>
+                        <div class="partners__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget
+                            velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus.
+                            Placerat dui.</div>
                     </div>
-                    <div class="partners__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget
-                        velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus.
-                        Placerat dui.</div>
-                </div>
-                <div class="partners__column">
-                    <div class="partners__percent">75%</div>
-                    <div class="partners__score">
-                        <div class="partners__score_bg partners__score_bg75"></div>
+                    <div class="partners__column">
+                        <div class="partners__percent">75%</div>
+                        <div class="partners__score">
+                            <div class="partners__score_bg partners__score_bg75"></div>
+                        </div>
+                        <div class="partners__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget
+                            velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus.
+                            Placerat dui.</div>
                     </div>
-                    <div class="partners__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget
-                        velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus.
-                        Placerat dui.</div>
-                </div>
-                <div class="partners__column">
-                    <div class="partners__percent">50%</div>
-                    <div class="partners__score">
-                        <div class="partners__score_bg partners__score_bg50"></div>
+                    <div class="partners__column">
+                        <div class="partners__percent">50%</div>
+                        <div class="partners__score">
+                            <div class="partners__score_bg partners__score_bg50"></div>
+                        </div>
+                        <div class="partners__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget
+                            velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus.
+                            Placerat dui.</div>
                     </div>
-                    <div class="partners__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget
-                        velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus.
-                        Placerat dui.</div>
-                </div>
-                <div class="partners__column">
-                    <div class="partners__percent">Итог</div>
-                    <div class="partners__score">
-                        <div class="partners__score_bg partners__score_bg10"></div>
+                    <div class="partners__column">
+                        <div class="partners__percent">Итог</div>
+                        <div class="partners__score">
+                            <div class="partners__score_bg partners__score_bg10"></div>
+                        </div>
+                        <div class="partners__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget
+                            velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus.
+                            Placerat dui.</div>
                     </div>
-                    <div class="partners__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget
-                        velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus.
-                        Placerat dui.</div>
                 </div>
             </div>
 
@@ -395,8 +397,8 @@
         </div>
     </section>
 
-    <div class="overlay">
-        <div class="modal" data-popup>
+    <div class="overlay" data-modal>
+        <div class="modal">
             <div class="modal__header">Просто заполните форму заявки</div>
             <div class="modal__subheader">и мы перезвоним вам в течении 10 минут</div>
             <form method="POST" action="" class="feed-form feed-form_m25auto">

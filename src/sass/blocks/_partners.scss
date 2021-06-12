@@ -11,6 +11,11 @@
         padding-left: 35px;
     }
 
+    &__inner {
+        display: flex;
+        justify-content: center;
+    }
+
     &__wrapper {
         margin-top: 80px;
         display: grid;
