@@ -21,9 +21,59 @@
             grid-template-columns: repeat(2, 200px);
         }
     }
+
+    .working {
+        padding: 100px 0 100px 0;
+        min-height: 570px;
+
+        &__squere {
+            width: 350px;
+            height: 350px;
+
+            img {
+                width: 320px;
+                top: 5px;
+                left: 5px;
+            }
+        }
+
+        &__content {
+            padding-top: 0;
+            width: unset;
+            max-width: 550px;
+        }
+
+        &__header {
+            font-size: 32px;
+        }
+    }
+
+    .partners {
+        padding-bottom: 100px;
+
+        &__column {
+            grid-template-columns: 245px;
+        }
+    }
+
+    .profession {
+        padding-bottom: 100px;
+    }
+
+    .brands {
+        padding-bottom: 100px;
+    }
+
+    .program {
+        padding-bottom: 100px;
+    }
+
+    .teachers {
+        padding-bottom: 100px;
+    }
 }
 
-@media(max-width: 992px) {
+@media(max-width: 991px) {
     .container {
         max-width: 760px;
     }
@@ -57,9 +107,94 @@
             grid-template-columns: repeat(2, 150px);
         }
     }
+
+    .working {
+        min-height: 450px;
+
+        &__squere {
+            width: 200px;
+            height: 200px;
+            border-width: 15px;
+
+            img {
+                width: 150px;
+                top: 25px;
+                left: 30px;
+            }
+        }
+
+        &__content {
+            max-width: 500px;
+        }
+
+        &__header {
+            font-size: 30px;
+        }
+
+        &__text {
+            font-size: 14px;
+        }
+    }
+
+    .partners {
+        &__percent {
+            font-size: 34px;
+        }
+
+        &__column {
+            grid-template-columns: 190px;
+        }
+
+        &__text {
+            font-size: 12px;
+        }
+    }
+
+    .profession {
+        &__header {
+            font-size: 38px;
+        }
+
+        &__subheader {
+            margin-top: 30px;
+            font-size: 14px;
+        }
+
+        &__text {
+            font-size: 14px;
+        }
+    }
+
+    .brands {
+        padding-bottom: 100px;
+
+        &__item {
+            img {
+                width: 120px;
+            }
+        }
+    }
+
+    .section-title {
+        &__header {
+            font-size: 44px;
+        }
+    }
+
+    .program {
+        &__item {
+            width: 170px;
+        }
+    }
+
+    .form {
+        &__btn {
+            padding: 10px 20px;
+        }
+    }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 767px) {
     .container {
         max-width: 560px;
     }
@@ -89,10 +224,21 @@
             height: 240px;
         }
 
+        &__timer {
+            max-width: 400px;
+            margin: 50px auto 0 auto;
+        }
+
     }
 
     .timer {
         justify-content: space-around;
+
+        &__box {
+            padding: 5px 15px;
+            width: 80px;
+            height: 80px;
+        }
     }
 
     .order {
@@ -103,6 +249,210 @@
             margin: 20px auto 20px auto;
         }
     }
+
+    .working {
+        padding: 100px 0 50px 0;
+
+        &__wrapper {
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__header {
+            font-size: 28px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        &__text {
+            font-size: 13px;
+            text-align: center;
+        }
+    }
+
+    .partners {
+        &__wrapper {
+            grid-template-columns: auto;
+        }
+
+        &__column {
+            grid-template-columns: 300px;
+        }
+    }
+
+    .section-title {
+        flex-direction: column;
+
+        &__header {
+            font-size: 37px;
+            text-align: center;
+        }
+    }
+
+    .profession {
+
+        &__header {
+            font-size: 28px;
+        }
+
+        &__wrapper {
+            margin-top: 30px;
+            grid-template-columns: auto;
+            row-gap: 30px;
+        }
+    }
+
+    .brands {
+        &__wrapper {
+            grid-template-columns: repeat(2, auto);
+        }
+
+        &__item {
+
+            &:nth-child(2),
+            &:nth-child(6) {
+                border-right: none;
+            }
+
+            &:nth-child(5),
+            &:nth-child(6) {
+                border-bottom: 1px solid rgba(256, 256, 256, 0.3);
+            }
+        }
+    }
+
+    .teachers {
+        &__wrapper {
+            grid-template-columns: auto;
+            row-gap: 40px;
+        }
+    }
+
+    .footer {
+        &__header {
+            font-size: 34px;
+        }
+
+        &__subheader {
+            font-size: 14px;
+        }
+
+        .form {
+            width: 300px;
+
+            &__mail {
+                padding: 10px 30px 10px 30px;
+            }
+
+            &__btn {
+                top: 75px;
+                right: 50%;
+                transform: translateX(50%);
+            }
+        }
+
+        &__social {
+            margin: 100px auto 0 auto;
+        }
+    }
+
+
 }
 
-@media(max-width: 576px) {}
+@media(max-width: 575px) {
+    .container {
+        max-width: 300px;
+    }
+
+    .promo {
+        &__header {
+            line-height: 130%;
+            font-size: 30px;
+        }
+    }
+
+    .burger {
+        span {
+            height: 3px;
+            width: 40px;
+        }
+    }
+
+    .timer {
+        &__int {
+            font-size: 16px;
+        }
+
+        &__name {
+            font-size: 14px;
+        }
+
+        &__box {
+            margin-right: 0;
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    .header {
+        &__btn {
+            display: none;
+        }
+    }
+
+    .program {
+
+        &__name {
+            font-size: 14px;
+        }
+
+        &__item {
+            width: 110px;
+
+            &_left {
+                transform: translateX(calc(-100% - 35px));
+
+                &:before {
+                    width: 25px;
+                    right: -35px;
+                }
+            }
+
+            &_right {
+                transform: translateX(35px);
+
+                &:before {
+                    left: -30px;
+                    width: 25px;
+                }
+            }
+        }
+    }
+
+    .modal {
+        width: 300px;
+
+        &__header {
+            font-size: 17px;
+        }
+
+        &__subheader {
+            font-size: 13px;
+        }
+
+        &__close {
+            top: 2px;
+            right: 5px;
+        }
+
+        .feed-form {
+            width: 250px;
+        }
+
+        .button_form {
+            width: 250px;
+            height: 46px;
+        }
+    }
+}
