@@ -10,6 +10,12 @@
         grid-auto-rows: auto;
     }
 
+    &__item-wrapper {
+        max-width: 300px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
     &__item {
         display: flex;
         flex-direction: column;
