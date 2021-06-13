@@ -5,6 +5,7 @@ import modal from './modules/modal';
 import timer from './modules/timer.js';
 import burger from './modules/burger';
 import cards from './modules/cards';
+import forms from './modules/form';
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -20,4 +21,5 @@ window.addEventListener('DOMContentLoaded', () => {
         mainActiveSelector: 'teachers__item_active',
         backActiveSelector: 'teachers__item-back_active'
     });
+    forms();
 });

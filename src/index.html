@@ -400,9 +400,9 @@
                 Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер
             </div>
 
-            <form class="form" action="">
+            <form class="form" action="./server.php">
                 <div class="form__input-line">
-                    <input placeholder="E-mail" class="form__mail" type="mail">
+                    <input placeholder="E-mail" class="form__mail" type="email" name="mail">
                     <button class="button button_nborder form__btn">Подписаться</button>
                 </div>
             </form>
@@ -428,9 +428,9 @@
         <div class="modal">
             <div class="modal__header">Просто заполните форму заявки</div>
             <div class="modal__subheader">и мы перезвоним вам в течении 10 минут</div>
-            <form method="POST" action="" class="feed-form feed-form_m25auto">
-                <input required type="text" maxlength="16" minlength="2" placeholder="Ваше имя" name="name">
-                <input required type="number" placeholder="Ваш телефон" name="phone">
+            <form method="POST" action="./server.php" class="feed-form feed-form_m25auto">
+                <input type="text" maxlength="16" minlength="2" placeholder="Ваше имя" name="name">
+                <input type="number" placeholder="Ваш телефон" name="phone">
                 <button class="button button_form button_nborder">Перезвонить мне</button>
             </form>
             <div class="modal__close">&#10005;</div>
