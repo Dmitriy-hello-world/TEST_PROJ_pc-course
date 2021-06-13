@@ -14,6 +14,8 @@
         max-width: 300px;
         overflow: hidden;
         margin: 0 auto;
+        display: flex;
+        position: relative;
     }
 
     &__item {
@@ -21,6 +23,12 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: 100%;
+        transition: all 0.3s;
+
+        &_active {
+            transform: translateX(-100%);
+        }
     }
 
     &__name {
@@ -39,5 +47,26 @@
 
     &__btn {
         margin-top: 30px;
+    }
+
+    &__item-back {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        background: rgba(256, 256, 256, .3);
+        transition: all 0.4s;
+        width: 216px;
+
+        &_active {
+            left: 0;
+        }
+    }
+
+    &__content {
+        color: #000;
+        margin-bottom: 75px;
     }
 }
