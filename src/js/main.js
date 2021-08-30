@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     pageUp('.page-up');
     modal();
-    timer('.timer', '2021-06-30');
+    timer('.timer', '2021-10-30');
     burger();
     cards({
         triggerSelector: '.teachers__btn',
